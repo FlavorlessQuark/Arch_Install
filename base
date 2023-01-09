@@ -1,0 +1,1 @@
+pacstrap -K base linux linux-lts base-devel linux-headers linux-lts-headers git
