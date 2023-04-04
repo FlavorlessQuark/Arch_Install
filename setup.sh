@@ -1,4 +1,4 @@
-pacman -S grub efibootmgr dhcpcd iwd openssh firefox bluez bluez-utils seat zsh sudo code sway i3status swayidle swaylock alacritty pulseaudio pulseaudio-bluetooth
+pacman -S grub efibootmgr iwd openssh firefox bluez bluez-utils seat zsh sudo code sway i3status swayidle swaylock alacritty pulseaudio pulseaudio-bluetooth
 
 grub-install --target=x86_64-efi --efi-directory=/boot --bootlader-id=grub
 grub-mkconfig -o /boot/grub/grub.cfg
@@ -8,6 +8,7 @@ systemctl enable iwd
 systemctl enable sshd
 systemctl enable bluetooth
 systemctl enable seatd
+systemctl enable systemd.resolved
 
 useradd -m -G wheel jjosephi
 
