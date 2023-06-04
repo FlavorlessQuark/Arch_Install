@@ -1,4 +1,4 @@
-pacman -S grub efibootmgr iwd openssh firefox bluez bluez-utils seat zsh sudo code sway i3status swayidle swaylock alacritty pulseaudio pulseaudio-bluetooth
+pacman -S grub efibootmgr iwd openssh firefox bluez bluez-utils seat zsh sudo code pipewire pipewire-audio wireplumber python displaylink wayland xorg-wayland node grim zip unzip
 
 grub-install --target=x86_64-efi --efi-directory=/boot --bootlader-id=grub
 grub-mkconfig -o /boot/grub/grub.cfg
@@ -11,6 +11,7 @@ systemctl enable seatd
 systemctl enable systemd.resolved
 
 useradd -m -G wheel jjosephi
+useradd -m -G sudo jjosephi
 
 # AUR helper
 sudo git clone https://aur/archlinux.org/yay-git.git
@@ -21,7 +22,10 @@ cd ..
 rm -rf yay-git
 #LY
 
-yay -S ly
+yay -S ly google-cloud-cli
 systemctl enable ly.service
+
+echo "SDL_VIDEODRIVER=\"wayland,x11\"" >> /etc/environment
+echo "WINI_UNIX_BACKEND=x11" >> /etc/environment
 
 chsh -s `which zsh`

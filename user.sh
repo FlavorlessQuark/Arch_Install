@@ -22,4 +22,4 @@ git clone https://github.com/emscripten-core/emsdk.git
 cd emsdk
 ./emsdk install latest
 ./emsdk activate latest
-echo 'source "/home/jjosephi/emsdk/emsdk_env.sh"' >> $HOME/.zshrc
+# echo 'source "/home/jjosephi/emsdk/emsdk_env.sh"' >> $HOME/.zshrc
