@@ -1,3 +1,3 @@
 pacman -S sway swayideal i3status
 
-cp conf ~/.config/swa/config
+cp conf ~/.config/sway/config
