@@ -36,3 +36,6 @@ cd emsdk
 ./emsdk install latest
 ./emsdk activate latest
 echo 'source "/home/jjosephi/emsdk/emsdk_env.sh"' >> $HOME/.zshrc
+
+rustup default stable
+rustup toolchain install nightly

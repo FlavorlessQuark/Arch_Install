@@ -1,4 +1,4 @@
-pacman -S grub efibootmgr iwd openssh firefox bluez bluez-utils seatd zsh sudo code pipewire pipewire-audio wireplumber python wayland xorg-xwayland nodejs grim zip unzip noto-fonts waybar swaylock swayidle vim wf-recorder neofetch
+pacman -S grub efibootmgr iwd openssh firefox bluez bluez-utils seatd zsh sudo code pipewire pipewire-audio wireplumber python wayland xorg-xwayland nodejs grim zip unzip noto-fonts waybar swaylock swayidle vim wf-recorder neofetch rust rustup
 
 grub-install --target=x86_64-efi --efi-directory=/boot --bootlader-id=grub
 grub-mkconfig -o /boot/grub/grub.cfg
