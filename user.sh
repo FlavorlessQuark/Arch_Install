@@ -39,3 +39,6 @@ echo 'source "/home/jjosephi/emsdk/emsdk_env.sh"' >> $HOME/.zshrc
 
 rustup default stable
 rustup toolchain install nightly
+
+#install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
