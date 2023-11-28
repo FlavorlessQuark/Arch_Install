@@ -3,7 +3,7 @@ pacman -S grub efibootmgr iwd openssh firefox bluez bluez-utils seatd zsh sudo c
 grub-install --target=x86_64-efi --efi-directory=/boot --bootlader-id=grub
 grub-mkconfig -o /boot/grub/grub.cfg
 
-systemctl enable dhcpcd
+#systemctl enable dhcpcd
 systemctl enable iwd
 systemctl enable sshd
 systemctl enable bluetooth
