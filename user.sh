@@ -27,6 +27,7 @@ mkdir -p ~/.config
 
 git clone https://github.com/FlavorlessQuark/VsCode_Settings settings
 sudo cp -r settings/* ~/.config/Code\ -\ OSS/User/
+rm -rf settings
 
 # This lets code work on Wayland
 echo $`--enable-features=WaylandWindowDecorations\n--ozone-platform-hint=auto`
