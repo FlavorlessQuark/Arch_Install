@@ -14,9 +14,7 @@ cd ..
 rm -rf yay-git
 #LY
 
-# yay -S ly google-cloud-cli
-yay -S greetd-tuigreet google-cloud-cli
-sudo systemctl enable ly.service
+yay -S google-cloud-cli
 
 git clone https://github.com/FlavorlessQuark/zsh
 mv zsh/.zshrc ~/.zshrc
